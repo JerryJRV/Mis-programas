@@ -1,0 +1,18 @@
+from tkinter import *
+def saludar():
+	v1= Tk()
+	v1.title("=)")
+	mensaje= Label(v1,text="Hola =) !!!!!! Como estas usuario")
+	mensaje.pack()
+	b= Button(v1,text="Salir",command=exit)
+	b.pack()
+	v1.mainloop()
+v= Tk()
+v.title("Bienvenido!!!")
+mensaje= Label(v,text="Bienvenido al programa con interfaz de Jerry R.")
+b1= Button(v,text="Saludar",command=saludar)
+b= Button(v,text="Salir",command=exit)
+mensaje.pack()
+b.pack()
+b1.pack()
+v.mainloop()
